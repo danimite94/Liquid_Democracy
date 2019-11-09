@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8C00</color>
+    <color name="fadedorange">#FFB266</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="colorAccent">#000000</color>
+    <color name="gray">#787878</color>
+    <color name="primary_dark_material_dark">#000000</color>
+    <color name="primary_material_dark">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="opaque1">#f2f2f2</color>
+    <color name="opaque2">#ddf6eaea</color>
+    <color name="opaque3">#ddffe2ab</color>
+    <color name="opaque4">#ddffdb97</color>
+    <color name="opaque5">#ddffd382</color>
+    <color name="opaque6">#ddfff0d5</color>
+
+
+    <color name="tab_disable">#979797</color>
+    <color name="tab_enable">#FFFFFF</color>
+    <color name="tab_checked">#F3CD70</color>
+    <color name="tab_unchecked">#FFFFFF</color>
+
+</resources>

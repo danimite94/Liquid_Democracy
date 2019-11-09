@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Votation is over"
+        android:gravity="center"
+        android:textSize="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:id="@+id/label">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Initiatives"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:text="Scores"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/inits"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_above="@id/label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp">
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/first_init_number"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:hint="init 12"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/firstinitscore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:hint="2.3"
+                android:textSize="40dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/first">
+
+            <TextView
+                android:id="@+id/second_init_number"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:hint="init 12"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/secondinitscore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:hint="2.3"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/second">
+
+            <TextView
+                android:id="@+id/third_init_number"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:hint="init 12"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/thirdinitscore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:hint="2.3"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leaveBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Leave"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTxt"
+            android:layout_below="@+id/name"
+            android:maxLength="24"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_quorum_admission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTxt"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="Quorum admission"
+            android:textSize="24sp" />
+
+        <NumberPicker
+            android:id="@+id/quorum_admission"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/txt_quorum_admission"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/txt_quorum_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quorum_admission"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="Quorum verification"
+            android:textSize="24sp" />
+
+        <NumberPicker
+            android:id="@+id/quorum_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/txt_quorum_verification"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+
+
+        <TextView
+            android:id="@+id/txt_admission_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quorum_verification"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="Admission Time"
+            android:textSize="24sp" />
+
+        <NumberPicker
+            android:id="@+id/admission_time"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/txt_admission_time"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/txt_discussion_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admission_time"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="Discussion time"
+            android:textSize="24sp" />
+
+        <NumberPicker
+            android:id="@+id/discussion_time"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/txt_discussion_time"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/Save"/>
+
+</RelativeLayout>

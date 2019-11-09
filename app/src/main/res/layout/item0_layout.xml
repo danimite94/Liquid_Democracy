@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/inittext"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Explanation" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="28dp"
+
+            android:text="Description"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/Explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_below="@+id/Description"
+            android:layout_marginTop="-28dp"
+            android:text="Describe the issue you would like to share"
+            android:textSize="12sp" />
+
+
+
+</RelativeLayout>

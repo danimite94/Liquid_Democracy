@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:visibility="visible" />
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:searchBackground="@color/colorPrimary"
+        app:searchCloseIcon="@drawable/ic_close_black_24dp"
+        app:searchSuggestionBackground="@color/colorPrimary"
+        app:searchSuggestionIcon="@drawable/ic_format_quote_black_24dp"
+        app:searchBackIcon="@drawable/ic_arrow_back_black_24dp"
+        />
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:divider="#806326"
+        android:dividerHeight="1dp"
+        />
+
+
+</RelativeLayout>

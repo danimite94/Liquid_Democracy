@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "935988558145",
+    "firebase_url": "https://liquiddemocracy-54af5.firebaseio.com",
+    "project_id": "liquiddemocracy-54af5",
+    "storage_bucket": "liquiddemocracy-54af5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935988558145:android:8bd44ae82ef04353",
+        "android_client_info": {
+          "package_name": "com.example.daniel.liquid_democracy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935988558145-tfj0lbnjbbeg0jo751l5t5gfagptfaa5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.daniel.liquid_democracy",
+            "certificate_hash": "bdc3391318c133e8c3ad590ef0243cc1b8121c51"
+          }
+        },
+        {
+          "client_id": "935988558145-gpdpdjldnebsebgp6kh9nmrcbkr7nlrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeqzJKqyEjVjLn2EGIC9w-Oqx2G63LM00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935988558145-gpdpdjldnebsebgp6kh9nmrcbkr7nlrb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

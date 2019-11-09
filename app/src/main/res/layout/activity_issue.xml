@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/issue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="INITIATIVES_ADAPTER.IssueActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phase"
+        android:layout_marginBottom="8dp"
+        android:hint="time"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/issue_number"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/issue_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_marginBottom="8dp"
+        android:hint="issue_number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/issue_stage" />
+
+    <TextView
+        android:id="@+id/issue_stage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issue_number"
+        android:layout_marginBottom="8dp"
+        android:hint="issue_stage"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/phase" />
+
+    <TextView
+        android:id="@+id/quorum_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issue_stage"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="quorum"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/quorum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/quorum"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/quorum_text"
+        android:layout_marginBottom="8dp"
+        android:max="100"
+        android:progress="0"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/time" />
+
+    <ProgressBar
+        android:id="@+id/phase"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:progress="0"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_above="@+id/create_init"
+        android:layout_below="@+id/quorum"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/optionsButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <Button
+        android:id="@+id/create_init"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/optionsButton"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/optionsButton"
+        android:background="@drawable/ic_add_circle_black_24dp"
+        android:enabled="false"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/optionsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/optionsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundedbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/common_google_signin_btn_text_light"
+        android:enabled="false"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <Button
+        android:id="@+id/delegate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/create_init"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/delegate"
+        android:enabled="false"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/optionsButton"
+        app:layout_constraintEnd_toStartOf="@+id/create_init"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    //TODO arrange a button that may just search for the terms you have written in the search bar
+
+</android.support.constraint.ConstraintLayout>

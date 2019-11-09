@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="50dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/groupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/group_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="describe your new group"
+            android:lines="3"
+            android:maxLength="200"
+            android:layout_below="@+id/nameTxt"  />
+
+        <ImageView
+            android:id="@+id/groupimage"
+            android:layout_width="138dp"
+            android:layout_height="136dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_add_circle_black_24dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/invitemembers"
+            android:text="@string/invite_members"
+            android:visibility="invisible"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:enabled="false"
+            />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:text="Save"
+            android:textColor="@color/cardview_dark_background" />
+
+
+    </LinearLayout>
+</LinearLayout>

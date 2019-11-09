@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Liquid_democracy</string>
+    <string name="login_name">Login</string>
+    <string name="feed_name">Feed</string>
+    <string name="groups_name">Groups</string>
+    <string name="main_name">Main</string>
+    <string name="search_name">Search</string>
+    <string name="addissue_name">Add_issue</string>
+    <string name="createissue_name">Create_issue</string>
+    <string name="issue_name">issue</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_register">Register</string>
+    <string name="action_register_facebook">Register with facebook</string>
+    <string name="action_sign_in_facebook">Sign in with facebook</string>
+    <string name="action_go_back"></string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Forgot password</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="facebook_app_id">251866835468248</string>
+    <string name="fb_login_protocol_scheme">fb251866835468248</string>
+    <string name="google_button">google</string>
+    <string name="main">Main_issue</string>
+    <string name="posts">posts</string>
+    <string name="camera">camera</string>
+    <string name="Description">Description</string>
+    <string name="initiative_number">initiative_number</string>
+    <string name="time">time</string>
+    <string name="suggestion_number">suggestion number</string>
+    <string name="username">username</string>
+    <string name="delegates">delegates</string>
+    <string name="Votation">votation</string>
+    <string name="initiative">initiative</string>
+    <string name="single_group">single group</string>
+    <string name="members">members</string>
+    <string name="tab2">feed</string>
+    <string name="tab1">groups</string>
+    <string name="google">google</string>
+    <string name="group">groups</string>
+    <string name="invite_members">Invite members</string>
+    <string name="select_members">Select members</string>
+    <string name="Save">Save</string>
+    <string name="createpolicy">Create Policy</string>
+    <string name="policy">Policy</string>
+    <string name="Policy_name">Policy Name</string>
+    <string name="score_name">Scores</string>
+
+</resources>
